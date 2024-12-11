@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary-color-light);
+}
+
+.nav__logo img {
+  max-width: 150px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__links .link a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav__links .link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.nav__links .link a:hover::after {
+  width: 50%;
+}
+
+.signup__container {
+  padding: 5rem 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.signup__content {
+  background-color: var(--primary-color-light);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.section__header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.form__group input {
+  padding: 1rem;
+  background-color: var(--primary-color-extra-light);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form__group input:focus {
+  border-color: var(--secondary-color-dark);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.signup__footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text-light);
+}
+
+.signup__footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.signup__footer a:hover {
+  text-decoration: underline;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background-color: var(--primary-color-light);
+  color: var(--text-light);
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__col h4 {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer__col a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.footer__col a:hover {
+  color: var(--secondary-color);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+.footer__bar {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color-light);
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .nav__links {
+    display: none;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .signup__content {
+    padding: 2rem;
+  }
+}
