@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "cimatec";
+$password = "breno";
 $dbname = "academibanc";
 
 try {
