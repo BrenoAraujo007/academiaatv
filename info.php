@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Cadastro | Fitclub</title>
   </head>
   <body>
     <nav>
       <div class="nav__logo">
-        <a href="#"><img src="images/logo (1).png" alt="logo" /></a>
+        <a href="#"></a>
       </div>
       <ul class="nav__links">
         <li class="link"><a href="#">Início</a></li>
@@ -30,41 +27,25 @@
         <form action="#" method="POST" class="signup__form">
           <div class="form__group">
             <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-              required
-            />
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
           </div>
 
           <div class="form__group">
             <label for="password">Senha</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Digite sua senha"
-              required
-            />
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
           </div>
 
           <div class="form__group">
             <label for="confirm-password">Confirmar Senha</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              placeholder="Confirme sua senha"
-              required
-            />
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required />
           </div>
 
           <button type="submit" class="btn">Criar Conta</button>
         </form>
+      </div>
+    </section>
 
-        <p class="signup__footer">
+    <p class="signup__footer">
           Já tem uma conta? <a href="#">Faça login</a>
         </p>
       </div>
@@ -72,7 +53,7 @@
 
     <footer class="section__container footer__container">
       <div class="footer__col">
-        <div class="footer__logo"><img src="images/logo (1).png" alt="logo" /></div>
+        <div class="footer__logo"></div>
         <p>
           Dê o primeiro passo para uma vida mais saudável com nossos planos
           de preços imbatíveis. Vamos suar, alcançar e conquistar juntos!
@@ -109,3 +90,4 @@
     </div>
   </body>
 </html>
+

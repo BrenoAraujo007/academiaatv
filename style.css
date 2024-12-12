@@ -82,6 +82,7 @@ nav {
   color: var(--white);
   margin-bottom: 2rem;
   text-align: center;
+  justify-content: center;
 }
 
 .signup__form {

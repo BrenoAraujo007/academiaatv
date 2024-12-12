@@ -1,3 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro | Fitclub</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Início</a></li>
+        <li class="link"><a href="#">Programa</a></li>
+        <li class="link"><a href="#">Serviços</a></li>
+        <li class="link"><a href="#">Sobre</a></li>
+        <li class="link"><a href="#">Comunidade</a></li>
+      </ul>
+    </nav>
+
 <?php
 session_start();
 include 'conexao.php';
@@ -19,19 +46,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login de Admin</title>
-</head>
-<body>
-    <form action="" method="post">
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario" name="usuario" required><br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br>
-        <input type="submit" value="Login">
-    </form>
-</body>
-</html>
